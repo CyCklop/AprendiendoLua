@@ -23,7 +23,7 @@ while true do
         for i,v in ipairs(Lista) do
             if v == remover then
                 table.remove(Lista, i)
-                print("Dato",remover,"sacado de la lista...")
+                print("Dato "..remover.." sacado de la lista...")
                 encontrado = true
                 break
             end
