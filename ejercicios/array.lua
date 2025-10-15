@@ -14,7 +14,7 @@ while true do
         
         if #Lista == 0 then
             print("La lista no contiene ningun dato, debe ingresar uno para verla...")
-            return
+            break
         end
 
         print("/////////////////")
