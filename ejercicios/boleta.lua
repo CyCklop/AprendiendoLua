@@ -8,7 +8,7 @@ function IngresarProducto(producto)
     local precio = tonumber(io.read())
 
     table.insert(producto,{nombre = nombre, precio = precio})
-    print("Producto: "..nombre.." aniadido correctamente!")
+    print("Producto ' "..nombre.."' aniadido correctamente!")
 end
 
 
@@ -35,8 +35,8 @@ function IngresarCarrito(producto,carrito)
     local nombre = io.read()
     for k,v in ipairs(producto) do
         if nombre == v.nombre then
-            table.insert(carrito, producto.v)
-            print("Producto "..nombre.." aniadido correctamente al carrito!")
+            table.insert(carrito, v)
+            print("Producto ' "..nombre.."' aniadido correctamente al carrito!")
             busqueda = true --flag
             break
         end
@@ -54,7 +54,7 @@ function VerBoleta(carrito)
         return
     end
 
-    print("/////LISTA PRODUCTOS/////")
+    print("///// BOLETA /////")
     for k,v in ipairs(carrito) do
         print(k..".- "..v.nombre.."-$"..v.precio.."")
     end
