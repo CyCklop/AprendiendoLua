@@ -11,6 +11,12 @@ while true do
         local agregar = io.read()
         table.insert(Lista, agregar)
     elseif opcion == 2 then
+        
+        if #Lista == 0 then
+            print("La lista no contiene ningun dato, debe ingresar uno para verla...")
+            return
+        end
+
         print("/////////////////")
         for i,v in ipairs(Lista) do
             print(i, v)

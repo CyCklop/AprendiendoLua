@@ -55,12 +55,9 @@ function VerBoleta(carrito)
     end
 
     print("///// BOLETA /////")
-    local suma_total = 0
     for k,v in ipairs(carrito) do
         print(k..".- "..v.nombre.."-$"..v.precio.."")
-        suma_total = suma_total + v
     end
-    print("////TOTAL A PAGAR////\nEl total a pagar es de: "..suma_total)
 end
 
 while true do
