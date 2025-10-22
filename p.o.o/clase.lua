@@ -1,4 +1,3 @@
---simulacion de una clase en una metatabla sin metodos y con 2 atributos
 Usuario = {}
 Usuario.__index = Usuario
 
@@ -8,3 +7,11 @@ function Usuario:new(nombre, edad)
     self.edad = edad or 0
     return self
 end
+
+function Usuario:saludar()
+    print(self.nombre .. " esta saludando!")
+end
+
+local persona1 = Usuario:new()
+
+persona1:saludar()
